@@ -16,7 +16,7 @@ class AddBook(models.Model):
     def __str__(self):
         return str(self.bookname)+"["+str(self.bookid)+']'
 def expiry():
-    return datetime.today() + timedelta(days=15)
+    return datetime.today() + timedelta(days=30)
 class IssueBook(models.Model):
     user = models.ForeignKey(User,on_delete=models.CASCADE)
     studentid=CharField(max_length=20)
