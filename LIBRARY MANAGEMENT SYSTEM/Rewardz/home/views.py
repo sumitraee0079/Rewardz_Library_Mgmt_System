@@ -213,8 +213,8 @@ def viewissuedbook(request):
             days=(date.today()-books.issuedate)
             d=days.days
             fine=0
-            if d>15:
-                day=d-15
+            if d>30:
+                day=d-30
                 fine=day*10
             print(d)
 
